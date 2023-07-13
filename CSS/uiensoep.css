@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+:root {
+    --border-radius: 1em;
+    --padding: 25px 10px;
+    --background-color: rgba(192, 144, 55, 0.63);
+    --box-shadow: 0px 2px 10px -1px rgba(0, 0, 0, 0.486);
+    --background: linear-gradient(rgba(255, 255, 255, 0.856), lightgrey) padding-box,
+    linear-gradient(to right, orange, darkorchid) border-box;
+    --border: 4px solid transparent;
+}
+
+.placeholder {
+    height: 70px;
+    background-color: aqua;
+}
+
+/* Button, links, img */
+.midgrid > a  {
+    text-decoration: none;
+    color:rgb(124, 12, 96);
+}
+
+.midgrid > a > p {
+    background: linear-gradient(to bottom, rgba(255, 166, 0, 0.5),rgba(255, 115, 0, 0.479));
+    width: 180px;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    border-radius: 10px;
+    margin: 5px auto;
+    box-shadow: 0px 1px 5px black;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Content */
+h2 {
+    font-family: 'Lobster', cursive;
+}
+
+h2::first-letter {
+    font-size: 150%;
+}
+
+.kook {
+    padding: 10px 5px;
+}
+/*
+h2, p, .ingredienten, .bereiding,  i {
+    padding: 5px 5px;
+    margin: 2px;
+} */
+
+/* Grid */
+
+main {
+    display:grid;
+    grid-template-columns: 10px 1fr 10px;
+}
+
+.apple {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.apple > h2, .apple > p {
+    background: linear-gradient(to bottom, rgba(255, 166, 0, 0.5),rgba(255, 115, 0, 0.479));
+    text-align: center;
+
+}
+
+.apple > p {
+    border-block-end: 1px solid purple;
+}
+.ingredienten > li:first-child, .tips > li:first-child {
+    list-style: none;
+}
+
+.ingredienten {
+    grid-column: 2;
+    grid-row: 3;
+    padding: 5px;
+    margin: 3px 0;
+    border-block-end: 1px solid purple;
+}
+
+.ingredienten > li, .tips {
+    list-style: square url("../IMG/liststyle4.png") inside;
+}
+
+.ingredienten > h4, .bereiding > h4 {
+    padding: 4px 0;
+}
+
+.bereiding {
+    grid-column: 2;
+    grid-row: 4;
+    padding: 5px;
+    margin: 3px 0;
+}
+
+i {
+    grid-column: 2;
+    grid-row: 5;
+    padding: 5px 0;
+}
+
+i > a {
+    text-decoration: none;
+    color: blueviolet;
+}
+
+i > a:visited {
+    text-decoration: none;
+    color: blueviolet;
+}
+
+.midgrid {
+    grid-column: 2;
+    grid-row: 6;
+}
+
+@media only screen and (min-width:760px) {
+    .apple > h2 {
+        font-size: 1.8em;
+    }
+}
+
+
+@media only screen and (min-width:1024px) {
+    main {
+        display:grid;
+        grid-template-columns: 10px 1fr 1fr 10px;
+    }
+    
+    .apple {
+        grid-column: 2 / span 2;
+        grid-row: 2;
+    }
+
+    .apple > h2, .apple > p {
+        padding: 5px 10px;
+    }
+
+    .apple > h2 {
+        font-size: 2.2em;
+    }
+
+    .kook {
+        padding: 10px 60px;
+    }
+    
+    .ingredienten {
+        grid-column: 3;
+        grid-row: 3;
+        padding: 5px 10px;
+        margin: 5px 0 5px 0px;
+        border-inline-start: 1px solid purple;
+        border-block-end: 0px solid purple;
+    }
+    
+    .bereiding {
+        grid-column: 2;
+        grid-row: 3;
+        padding: 5px 10px;
+        margin: 5px 0px 5px 0;
+    }
+
+    .bereiding > h4, .bereiding > p {
+        padding: 5px 10px;
+    }
+    
+    i {
+        grid-column: 2;
+        grid-row: 5;
+        padding: 5px 0;
+    }
+    
+    .midgrid {
+        grid-column: 2 / span 2;
+        grid-row: 6;
+    }
+}
+
+@media only screen and (min-width:1440px) {
+    main {
+        margin: 0 5%;
+    }
+}

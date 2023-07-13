@@ -1,0 +1,76 @@
+.animatie {
+    animation: gradient 1s linear;
+    animation-iteration-count:initial;
+    animation-delay: initial;
+    animation-direction: alternate;
+    animation-fill-mode: initial;
+    animation-play-state: initial;
+}
+
+@keyframes gradient {
+    0% {
+        background: linear-gradient(to right, rgb(47,0,58) 0%, rgb(206,36,255) 100%, rgb(154,28,191) 100%);
+    }
+    5% {
+        background: linear-gradient(to right, rgb(47,0,58) 0%, rgb(206,36,255) 95%, rgb(154,28,191) 100%);
+    }
+    10% {
+        background: linear-gradient(to right, rgb(47,0,58) 0%, rgb(206,36,255) 90%, rgb(154,28,191) 100%);
+    }
+    15% {
+        background: linear-gradient(to right, rgb(47,0,58) 0%, rgb(206,36,255) 85%, rgb(154,28,191) 100%);
+    }
+    20% {
+        background: linear-gradient(to right, rgb(47,0,58) 0%, rgb(206,36,255) 80%, rgb(154,28,191) 100%);
+    }
+    25% {
+        background: linear-gradient(to right, rgb(47,0,58) 0%, rgb(206,36,255) 75%, rgb(154,28,191) 100%);
+    }
+    30% {
+        background: linear-gradient(to right, rgb(47,0,58) 0%, rgb(206,36,255) 70%, rgb(154,28,191) 100%);
+    }
+    35% {
+        background: linear-gradient(to right, rgb(47,0,58) 0%, rgb(206,36,255) 65%, rgb(154,28,191) 100%);
+    }
+    40% {
+        background: linear-gradient(to right, rgb(47,0,58) 0%, rgb(206,36,255) 60%, rgb(154,28,191) 100%);
+    }
+    45% {
+        background: linear-gradient(to right, rgb(47,0,58) 0%, rgb(206,36,255) 55%, rgb(154,28,191) 100%);
+    }
+    50% {
+        background: linear-gradient(to right, rgb(47,0,58) 0%, rgb(206,36,255) 50%, rgb(154,28,191) 100%);
+    }
+    55% {
+        background: linear-gradient(to right, rgb(47,0,58) 0%, rgb(206,36,255) 45%, rgb(154,28,191) 100%);
+    }
+    60% {
+        background: linear-gradient(to right, rgb(47,0,58) 0%, rgb(206,36,255) 40%, rgb(154,28,191) 100%);
+    }
+    65% {
+        background: linear-gradient(to right, rgb(47,0,58) 0%, rgb(206,36,255) 35%, rgb(154,28,191) 100%);
+    }
+    70% {
+        background: linear-gradient(to right, rgb(47,0,58) 0%, rgb(206,36,255) 30%, rgb(154,28,191) 100%);
+    }
+    75% {
+        background: linear-gradient(to right, rgb(47,0,58) 0%, rgb(206,36,255) 25%, rgb(154,28,191) 100%);
+    }
+    80% {
+        background: linear-gradient(to right, rgb(47,0,58) 0%, rgb(206,36,255) 20%, rgb(154,28,191) 100%);
+    }
+    85% {
+        background: linear-gradient(to right, rgb(47,0,58) 0%, rgb(206,36,255) 15%, rgb(154,28,191) 100%);
+    }
+    90% {
+        background: linear-gradient(to right, rgb(47,0,58) 0%, rgb(206,36,255) 10%, rgb(154,28,191) 100%);
+    }
+    95% {
+        background: linear-gradient(to right, rgb(47,0,58) 0%, rgb(206,36,255) 5%, rgb(154,28,191) 100%);
+    }
+    100% {
+        background: linear-gradient(to right, rgb(47,0,58) 0%, rgb(206,36,255) 0%, rgb(154,28,191) 100%);
+    }
+    
+  
+}

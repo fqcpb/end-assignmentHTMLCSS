@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/animatie.css">
+</head>
+<body>
+    <header>
+        
+        <nav>
+            
+            <div class="onderbalk animatie"></div>
+            <div class="navbar">
+                <div class="pica"><a href="index.html"><img src="img/swiss-cheese-gcec1190ba_640.png" alt="logo"></a></div>
+                <div class="logo"><a href="index.html">KAAS en wijn</a>
+                </div>
+                <input type="checkbox" id="hamburger">
+        <label for="hamburger"><img src="img/menu2.png" alt="hamburger"></label>
+                
+            <ul class="links" id="links">
+                
+                <li><a href="index.html">Home</a></li>
+                <li><a href="kaas.html">Kaas</a></li>
+                <li><a href="wijnen.html" >Wijnen</a></li>
+                <li><a href="#">Recepten</a>
+                <div class="dropdown arrow">&#9651;
+                </div>
+                <ul class="sub-menu">
+                <li><a href="borrelplankjes.html">Borrelplankjes</a></li>
+                <li><a href="lunch.html">Lunch</a></li>
+                <li><a href="Diner.html">Diner</a></li>
+                </ul>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        
+        </div>
+        </nav>
+        <div class="placeholder">ik ben blok</div>
+        </header>
+
+        <main>
+            <section class="leadin">
+            <h2>Contact</h2>
+            <p>Ben je ook zo benieuwd naar onze Kaas catalogus? Laat dan je gegevens achter en vertel ons in kort waarom jij deze catalogus verdient.
+                <br>Je kan tot 3 februari 2023 kans maken, dus wacht niet te lang..
+            </p>
+        </section>
+            <div class="red">
+            <form id="contact" action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+                <p><input class="naam" name="naam" size="50" required placeholder="Naam*"></p>
+                <p><input class="email" name="email" type="email" size="50" placeholder="E-Mail example@outlook.com*" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required></p>
+                <p><input class="tel" name="tel" type="tel" size="10" pattern="0\d{9}" maxlength="10" placeholder="Tel nummer"></p>
+                <p><textarea class="opmerk" name="Comments" rows="7" cols="40" maxlength="280" placeholder="Opmerking (max 280 caracters)*" required></textarea></p>
+                <p><input class="subm" type="submit" value="Verzenden"></p>
+                </form>
+        </div>
+
+        <div class="datetime">
+            <script>
+
+                /*Current date script credit: 
+                JavaScript Kit (www.javascriptkit.com)
+                Over 200+ free scripts here!
+                */
+                
+                var mydate=new Date()
+                var year=mydate.getYear()
+                if (year < 1000)
+                year+=1900
+                var day=mydate.getDay()
+                var month=mydate.getMonth()
+                var daym=mydate.getDate()
+                if (daym<10)
+                daym="0"+daym
+                var dayarray=new Array("zondag","maandag","dinsdag","woensdag","donderdag","vrijdag","zaterdag")
+                var montharray=new Array("januari","februari","maart","april","mei","juni","juli","augustus","september","oktober","november","december")
+                document.write("<small><font color='000000'>"+dayarray[day]+", "+montharray[month]+" "+daym+", "+year+"</font></small>")
+                
+                </script>
+            </div>
+            
+
+        <div class="picture">
+            <img src="IMG/lopgo2.png" alt="kaas en wijn line art">
+        </div>
+
+
+       
+       
+        <div id="googleMap"></div>
+
+        <script>
+        function myMap() {
+        var mapProp= {
+          center:new google.maps.LatLng(51.9474891,4.46893),
+          zoom:15,
+        };
+        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+        }
+        </script>
+        
+        <!-- deze voor live server, development purpose
+        <script
+              src="https://maps.googleapis.com/maps/api/js?&callback=myMap">
+            
+            </script>  -->
+
+            
+        <script
+              src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=myMap">
+            </script> 
+        </main>
+
+
+        <footer>
+            <div class="contact">
+                <div class="var2"><a href="#"><p>&#9993; Contact</p></a></div>
+                <div class="var3"><p>Volg ons op</p>
+                    <a href="https://www.instagram.com/"><img src="PICTO/insta.png" alt="insta"></a>
+                    <a href="https://www.facebook.com/"><img src="PICTO/facebook.png" alt="facebook"></a>
+                    <a href="https://www.youtube.com/"><img src="PICTO/youtube.png" alt="youtube"></a>
+                </div>
+            </div>
+        </footer>
+    
+</body>
+</html>
